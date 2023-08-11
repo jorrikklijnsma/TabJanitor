@@ -28,7 +28,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "tabJanitor.UnpinAllTabs",
+        "command": "tabJanitor.unpinAllTabs",
         "title": "Unpin all tabs",
         "category": "TabJanitor"
       },
@@ -66,7 +66,7 @@
     "menus": {
       "editor/title/context": [
         {
-          "command": "tabJanitor.UnpinAllTabs",
+          "command": "tabJanitor.unpinAllTabs",
           "group": "TabJanitor@1",
           "submenu": "TabJanitor"
         },

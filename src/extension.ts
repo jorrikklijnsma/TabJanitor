@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import type { TabGroup, Tab, Uri } from 'vscode';
+import type { Tab, Uri } from 'vscode';
 import * as path from 'path';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -8,14 +8,39 @@ export function activate(context: vscode.ExtensionContext) {
     async () => {
       const activeGroup = vscode.window.tabGroups.activeTabGroup;
 
+      const currentTab = vscode.window.tabGroups.activeTabGroup?.activeTab;
+      const currentTabIsPinned = currentTab?.isPinned;
+
       if (activeGroup) {
         for (let tab of activeGroup.tabs) {
           if (tab.isPinned) {
             // Use the VS Code command to toggle pin status
+            const pinnedTab = tab?.input as {
+              uri: Uri;
+            };
+
+            const document = await vscode.workspace.openTextDocument(
+              pinnedTab.uri
+            );
+            await vscode.window.showTextDocument(document);
+
             await vscode.commands.executeCommand(
               'workbench.action.unpinEditor'
             );
           }
+        }
+      }
+
+      // Reopen the tab that was active before unpinning all tabs
+      if (currentTab && !currentTabIsPinned) {
+        const currentTabInput = currentTab?.input as {
+          uri: Uri;
+        };
+        if (currentTabInput.uri) {
+          const document = await vscode.workspace.openTextDocument(
+            currentTabInput.uri
+          );
+          await vscode.window.showTextDocument(document);
         }
       }
 
