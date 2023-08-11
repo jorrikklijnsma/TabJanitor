@@ -4,7 +4,7 @@
   "description": "TabJanitor provides intuitive and flexible controls for managing your workspace's tabs. Designed to enhance productivity, TabJanitor offers advanced features that go beyond the default tab management capabilities. Whether you're dealing with a handful of files or navigating a sea of open tabs, TabJanitor makes it easy to stay organized and focused on your code. Start taking control of your workspace today with TabJanitor.",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.80.0"v
   },
   "categories": [
     "Other"
@@ -15,25 +15,79 @@
     "commands": [
       {
         "command": "tabJanitor.closeTabsToLeft",
-        "title": "Close Tabs to Left"
+        "title": "Close Tabs to Left",
+        "category": "TabJanitor"
       },
       {
         "command": "tabJanitor.closeAllButPinned",
-        "title": "Close All But Pinned"
+        "title": "Close All But Pinned",
+        "category": "TabJanitor"
+      },
+      {
+        "command": "tabJanitor.closeAllExceptCurrentFileType",
+        "title": "Close All Except Current File Type",
+        "category": "TabJanitor"
+      },
+      {
+        "command": "tabJanitor.closeAllTabsWithCurrentFileType",
+        "title": "Close All Tabs With Current File Type",
+        "category": "TabJanitor"
+      },
+      {
+        "command": "tabJanitor.closeAllTabsFromSameDirectory",
+        "title": "Close All Tabs From Same Directory",
+        "category": "TabJanitor"
+      },
+      {
+        "command": "tabJanitor.closeAllTabsWithoutChanges",
+        "title": "Close All Tabs Without Changes",
+        "category": "TabJanitor"
       }
     ],
     "menus": {
       "editor/title/context": [
         {
+          "submenu": "TabJanitor",
+          "group": "navigation@1"
+        },
+        {
           "command": "tabJanitor.closeTabsToLeft",
-          "group": "navigation"
+          "group": "TabJanitor@1",
+          "submenu": "TabJanitor"
         },
         {
           "command": "tabJanitor.closeAllButPinned",
-          "group": "navigation"
+          "group": "TabJanitor@1",
+          "submenu": "TabJanitor"
+        },
+        {
+          "command": "tabJanitor.closeAllExceptCurrentFileType",
+          "group": "TabJanitor@1",
+          "submenu": "TabJanitor"
+        },
+        {
+          "command": "tabJanitor.closeAllTabsWithCurrentFileType",
+          "group": "TabJanitor@1",
+          "submenu": "TabJanitor"
+        },
+        {
+          "command": "tabJanitor.closeAllTabsFromSameDirectory",
+          "group": "TabJanitor@1",
+          "submenu": "TabJanitor"
+        },
+        {
+          "command": "tabJanitor.closeAllTabsWithoutChanges",
+          "group": "TabJanitor@1",
+          "submenu": "TabJanitor"
         }
       ]
-    }
+    },
+    "submenus": [
+      {
+        "id": "TabJanitor",
+        "label": "TabJanitor"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
