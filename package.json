@@ -15,7 +15,7 @@
     "theme": "dark"
   },
   "homepage": "https://github.com/jorrikklijnsma/TabJanitor/blob/main/README.md",
-  "icon": "assets/logo.png",
+  "icon": "assets/logo_icon.png",
   "engines": {
     "vscode": "^1.80.0"
   },

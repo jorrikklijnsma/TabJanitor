@@ -2,7 +2,7 @@
 
 Clean up and manage your VS Code tabs with ease.
 
-![TabJanitor Logo](./assets/logo.png)
+![TabJanitor Logo](./assets/logo_icon.png)
 
 TabJanitor is a VS Code extension designed to enhance productivity by providing intuitive and flexible controls for managing your workspace's tabs. Whether you're dealing with a handful of files or navigating a sea of open tabs, TabJanitor makes it easy to stay organized and focused on your code.
 
