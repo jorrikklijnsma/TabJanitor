@@ -28,6 +28,8 @@ TabJanitor is a VS Code extension designed to enhance productivity by providing 
 
 After installation, right-click on any tab in your editor. You should see a "TabJanitor" submenu with all the features listed.
 
+![TabJanitor Menu](./assets/tab-janitor-menu.png)
+
 ## Known Issues
 
 - None at the moment. If you find any, please [report them here](https://github.com/jorrikklijnsma/TabJanitor/issues).
