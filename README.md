@@ -8,11 +8,12 @@ TabJanitor is a VS Code extension designed to enhance productivity by providing 
 
 ## Features
 
-- **Close Tabs to the Left**: Right-click on any tab to close all tabs to its left.
-- **Close All But Pinned**: Close all tabs except the pinned ones.
-- **Close All Except Current File Type**: Close all tabs that don't match the file type of the current tab.
-- **Close All Tabs With Current File Type**: Close all tabs that match the file type of the current tab.
-- **Close All Tabs From Same Directory**: Close all tabs from the same directory as the current tab.
+- **Unpin All Tabs**: Unpin all currently pinned tabs.
+- **Close Tabs to the Left**: Right-click on any tab to close all tabs to the right-clicked left.
+- **Close All Tabs With Other File Types**: Close all tabs that don't match the file type of the right-clicked tab.
+- **Close All Tabs With The Same File Type**: Close all tabs that match the file type of the right-clicked tab.
+- **Close All Tabs From The Same Directory**: Close all tabs from the same directory as the right-clicked tab.
+- **Close All Tabs From Other Directories**: Close all tabs not from the directory of the right-clicked tab.
 - **Close All Tabs Without Changes**: Close all tabs without any unsaved changes.
 
 ![TabJanitor Demo](https://github.com/jorrikklijnsma/TabJanitor/blob/main/assets/demo.gif?raw=true)
