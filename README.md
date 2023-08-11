@@ -2,7 +2,7 @@
 
 Clean up and manage your VS Code tabs with ease.
 
-![TabJanitor Logo](./assets/logo_icon.png)
+![TabJanitor Logo](https://github.com/jorrikklijnsma/TabJanitor/blob/main/assets/logo_icon.png?raw=true)
 
 TabJanitor is a VS Code extension designed to enhance productivity by providing intuitive and flexible controls for managing your workspace's tabs. Whether you're dealing with a handful of files or navigating a sea of open tabs, TabJanitor makes it easy to stay organized and focused on your code.
 
@@ -15,7 +15,7 @@ TabJanitor is a VS Code extension designed to enhance productivity by providing 
 - **Close All Tabs From Same Directory**: Close all tabs from the same directory as the current tab.
 - **Close All Tabs Without Changes**: Close all tabs without any unsaved changes.
 
-![TabJanitor Demo](./assets/demo.gif)
+![TabJanitor Demo](https://github.com/jorrikklijnsma/TabJanitor/blob/main/assets/demo.gif?raw=true)
 
 ## Installation
 
@@ -28,7 +28,7 @@ TabJanitor is a VS Code extension designed to enhance productivity by providing 
 
 After installation, right-click on any tab in your editor. You should see a "TabJanitor" submenu with all the features listed.
 
-![TabJanitor Menu](./assets/tab-janitor-menu.png)
+![TabJanitor Menu](https://github.com/jorrikklijnsma/TabJanitor/blob/main/assets/tab-janitor-menu.png?raw=true)
 
 ## Known Issues
 
