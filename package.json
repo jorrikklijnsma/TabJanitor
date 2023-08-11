@@ -2,7 +2,7 @@
   "name": "tab-janitor",
   "displayName": "TabJanitor",
   "description": "TabJanitor provides intuitive and flexible controls for managing your workspace's tabs. Designed to enhance productivity, TabJanitor offers advanced features that go beyond the default tab management capabilities. Whether you're dealing with a handful of files or navigating a sea of open tabs, TabJanitor makes it easy to stay organized and focused on your code. Start taking control of your workspace today with TabJanitor.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Jorrik Klijnsma"
   },
@@ -28,28 +28,33 @@
   "contributes": {
     "commands": [
       {
+        "command": "tabJanitor.UnpinAllTabs",
+        "title": "Unpin all tabs",
+        "category": "TabJanitor"
+      },
+      {
         "command": "tabJanitor.closeTabsToLeft",
-        "title": "Close Tabs to Left",
+        "title": "Close Tabs to the Left",
         "category": "TabJanitor"
       },
       {
-        "command": "tabJanitor.closeAllButPinned",
-        "title": "Close All But Pinned",
+        "command": "tabJanitor.closeAllTabsWithOtherFileType",
+        "title": "Close All Tabs With Other File Types",
         "category": "TabJanitor"
       },
       {
-        "command": "tabJanitor.closeAllExceptCurrentFileType",
-        "title": "Close All Except Current File Type",
+        "command": "tabJanitor.closeAllTabsWithSameFileType",
+        "title": "Close All Tabs With The Same File Type",
         "category": "TabJanitor"
       },
       {
-        "command": "tabJanitor.closeAllTabsWithCurrentFileType",
-        "title": "Close All Tabs With Current File Type",
+        "command": "tabJanitor.closeAllTabsFromOtherDirectories",
+        "title": "Close All Tabs From The Same Directory",
         "category": "TabJanitor"
       },
       {
         "command": "tabJanitor.closeAllTabsFromSameDirectory",
-        "title": "Close All Tabs From Same Directory",
+        "title": "Close All Tabs From Other Directories",
         "category": "TabJanitor"
       },
       {
@@ -61,8 +66,9 @@
     "menus": {
       "editor/title/context": [
         {
-          "submenu": "TabJanitor",
-          "group": "navigation@1"
+          "command": "tabJanitor.UnpinAllTabs",
+          "group": "TabJanitor@1",
+          "submenu": "TabJanitor"
         },
         {
           "command": "tabJanitor.closeTabsToLeft",
@@ -70,17 +76,17 @@
           "submenu": "TabJanitor"
         },
         {
-          "command": "tabJanitor.closeAllButPinned",
+          "command": "tabJanitor.closeAllTabsWithOtherFileType",
           "group": "TabJanitor@1",
           "submenu": "TabJanitor"
         },
         {
-          "command": "tabJanitor.closeAllExceptCurrentFileType",
+          "command": "tabJanitor.closeAllTabsWithSameFileType",
           "group": "TabJanitor@1",
           "submenu": "TabJanitor"
         },
         {
-          "command": "tabJanitor.closeAllTabsWithCurrentFileType",
+          "command": "tabJanitor.closeAllTabsFromOtherDirectories",
           "group": "TabJanitor@1",
           "submenu": "TabJanitor"
         },
