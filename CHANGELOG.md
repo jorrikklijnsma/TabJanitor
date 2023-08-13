@@ -21,6 +21,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.1.0] - 2023-08-11
 
+At publishing a minor increment is skipped. so this is registered as 1.2.0
+
 ### Added features
 
 - Unpinn all tabs
@@ -33,3 +35,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Removed
 
 - Close All But Pinned
+
+## [1.2.1] - 2023-08-11
+
+### Added features
+
+- Improved color scheme on the VSCode marketplace
+- Updated marketplace screenshots with latest features.
